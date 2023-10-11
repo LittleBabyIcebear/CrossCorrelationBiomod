@@ -86,7 +86,7 @@ if st.sidebar.button("Run"):
     i = np.arange(0, len(toe), 1)
     plotly_fig_auto_correlation = go.Figure()
     # Add the heel signal to the plot
-    plotly_fig_auto_correlation.add_trace(go.Scatter(x=i, y=Rxy, mode='lines', name='Heel Signal', line=dict(color='red')))
+    plotly_fig_auto_correlation.add_trace(go.Scatter(x=i, y=Rxy, mode='lines', name='Heel Signal', line=dict(color='blue')))
 
     # Customize the layout
     plotly_fig_auto_correlation.update_layout(
@@ -109,7 +109,7 @@ if st.sidebar.button("Run"):
     i = np.arange(0, len(norm), 1)
     plotly_fig_norm = go.Figure()
     # Add the heel signal to the plot
-    plotly_fig_norm.add_trace(go.Scatter(x=i, y=norm, mode='lines', name='Heel Signal', line=dict(color='red')))
+    plotly_fig_norm.add_trace(go.Scatter(x=i, y=norm, mode='lines', name='Heel Signal', line=dict(color='blue')))
 
     # Customize the layout
     plotly_fig_norm.update_layout(
